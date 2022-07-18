@@ -65,6 +65,79 @@
 			"areaTags": [
 				"ST"
 			]
+		},
+		{
+			"name": "Strike True",
+			"source": "WorldwithNoName",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You extend your hand and point a finger at a target you can see in range. Any gap in the target's defenses are highlighted by bright light that seems to glow out of it, shedding dim light in a 10-foot radius. As long as the spell lasts, attack rolls against the affected creature have advantage. However, after every attack following the first, you must make a Constitution saving throw to maintain your concentration as though you had been struck by the attack yourself (though you take no damage).",
+				"The number of attacks that will not cause a Constitution save increases by one when you reach 5th level (two attacks), and again when you reach 11th level (three attacks) and 17th level (four attacks).",
+				"This spell replaces the spell {@spell True Strike}."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Tiefling (Abyssal)",
+					"source": "UAThatOldBlackMagic",
+					"baseName": "Tiefling",
+					"baseSource": "PHB"
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SCL",
+				"LGT"
+			]
 		}
 	]
 }
