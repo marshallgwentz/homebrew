@@ -1,0 +1,70 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WorldwithNoName",
+				"abbreviation": "MGWNN",
+				"full": "Marsh'Hael's Guide to the World with No Name",
+				"url": "",
+				"authors": [
+					"Marshall Wentz"
+				],
+				"convertedBy": []
+			}
+		]
+	},
+	"spell": [
+		{
+			"name": "Silver-Barbed Tongue",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when a creature you can see within 60 feet of yourself succeeds on an attack roll, an ability check, or a saving throw"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You magically distract the triggering creature and turn its momentary uncertainty into encouragement for another creature. The triggering creature must roll a {@dice d4} and subtract it from the {@dice d20}.",
+				"You can then choose a different creature you can see within range (you can choose yourself). The chosen creature gains a {@dice d4}, which it can choose to add to its AC for the attack if the triggering roll was an attack against them, or otherwise may add it to the next attack roll, ability check, or saving throw it makes within 1 minute. A creature can be empowered by only one use of this spell at a time.",
+				"This spell replaces the spell {@spell Silvery Barbs}."
+			],
+			"source": "WorldwithNoName",
+			"components": {
+				"v": true
+			},
+			"areaTags": [
+				"ST"
+			]
+		}
+	]
+}
