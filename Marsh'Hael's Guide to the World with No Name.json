@@ -138,6 +138,77 @@
 				"SCL",
 				"LGT"
 			]
+		},
+		{
+			"name": "Arc Lightning",
+			"source": "WorldwithNoName",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a twig from a tree that has been struck by lightning"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. The creature must make a Dexterity saving throw. The target takes {@damage 1d12} lightning damage, or half as much on a successful save. If they failed the saving throw, you can use your action on subsequent turns to deal {@damage 1d12} lightning damage to the target automatically. The spell ends if the target is ever outside the spell's range or if it has total cover from you.",
+				"This spell replaces the spell {@spell Witch Bolt}."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 1d12|1-9|1d12} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
 		}
 	]
 }
