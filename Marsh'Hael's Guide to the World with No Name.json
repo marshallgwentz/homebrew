@@ -211,4 +211,132 @@
 			}
 		}
 	]
+	"race": [
+		{
+			"name": "Kraul",
+			"source": "WorldwithNoName",
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+				"climb": true
+			},
+			"ability": [
+				{
+					"str": 2,
+					"con": 1
+				}
+			],
+			"age": {
+				"mature": 3,
+				"max": 40
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Kraul live short, brutal lives. They reach adulthood around 3 years old and live to about age 40."
+					]
+				},
+					"name": "Speed",
+					"type": "entries",
+					"entries": [
+						"You have a walking speed of 30 feet and a climbing speed equal to your walking speed."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Kraul are usually neutral with a strong cultural tendency toward evil."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"type": "entries",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"name": "Hive Instinct",
+					"type": "entries",
+					"entries": [
+						"The kraul is immune to the charmed and frightened conditions while within 30 feet of at least one other kraul."
+					]
+				},
+				{
+					"name": "Natural Armor",
+					"type": "entries",
+					"entries": [
+						"Due to your insectoid shell and the shape of your body, you are ill-suited to wearing armor. Your shell provides ample protection, however; it gives you a base AC of 17 (your Dexterity modifier doesn’t affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield’s bonus as normal."
+					]
+				},
+				{
+					"name": "Raised on the Rot Farm",
+					"type": "entries",
+					"entries": [
+						"Although they have been recently accepted into the Golgari Swarm, the kraul have always been the laborers and farmers of the Undercity. You are proficient in the {@skill Nature} skill. You are also proficient with one type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools} of your choice."
+					]
+				},
+				{
+					"name": "Languages",
+					"type": "entries",
+					"entries": [
+						"You can speak, read, and write Common and Kraul.
+					]
+				},
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Natural Armor",
+				"Skill Proficiency",
+				"Tool Proficiency",
+				
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true
+				}
+			]
+		}
+	],
+	"subrace": [
+		{
+			"name": "Flyer",
+			"entries": [
+				{
+					"name": "Gossamer Wings",
+					"type": "entries",
+					"entries": [
+						"You have thin, beetle-like wings. You have a fly speed equal to your walking speed."
+					]
+				},
+			],
+			"traitTags": [
+				"Natural Armor"
+			],
+			"source": "WorldwithNoName",
+			"raceName": "Kraul",
+			"raceSource": "WorldwithNoName"
+		},
+		{
+			"name": "Warrior
+			"entries": [
+				{
+					"name": "Pack Tactics",
+					"type": "entries",
+					"entries": [
+						"You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn’t incapacitated."
+					]
+				},
+			],
+			"source": "WorldwithNoName",
+			"raceName": "Kraul",
+			"raceSource": "WorldwithNoName"
+		}
+	]
+}
 }
