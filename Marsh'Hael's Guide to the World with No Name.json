@@ -703,5 +703,16 @@
 			},
 			"isNpc": true
 		}
-	]
+	],
+	"variantrule": [
+		{
+				"name": "Cleaving Through Creatures",
+				"source": "WorldwithNoName",
+				"ruleType": "VO",
+				"entries": [
+				"If your ranged players consistently find themselves in close quarters with monsters, you may consider using this optional variant.",
+				"If a character is within 5 feet of an enemy and is wielding a hand crossbow or any pistol, they may choose to negate the disadvantage imposed on their ranged attacks with that weapon. If they do so, all attack rolls against them have advantage until the start of their next turn."
+			]
+		}
+	],
 }
