@@ -702,6 +702,204 @@
 				]
 			},
 			"isNpc": true
+		},
+		{
+			"name": "Jarvis Barbenshammer",
+			"source": "WorldwithNoName",
+			"page": 302,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 6,
+			"dex": 16,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 15,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The wraith can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the wraith has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Villain Actions",
+					"entries": [
+						"The wraith of Jarvis Barbenshammer has 3 villain actions, which it can take on another creature's turn. They can be taken in any order, but only one can be taken per round and each only once per combat. The suggested order is presented here.",
+						"Round 1: Shadow Grab. A spectral, shadowy appears and grabs one of the players, attempting to grapple them ({@dc 15}). On a failure, the hand rapidly drags the target to an unoccupied space within 10 feet of Jarvis. Whether it succeeds or fails, two {@creature specter}s appear in unoccupied spaces adjacent to where the target would have been dragged.",
+						"Round 2: Shadow Step. Jarvis casts {@spell thunder step} at 3rd level, with the following modifications:",
+						"* It deals necrotic damage instead of thunder damage.",
+						"* He may not take anthing with him.",
+						"Round 3: Shadow Blast. Jarvis emits a large pulse of dark energy toward the ceiling, collapsing it on top of everything in the room. This mimics casting the spell {@spell earth tremor} with a 4th level spell slot, but makes the area difficult terrain regardless of the material the terrain is made of."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}21 ({@damage 4d8 + 3}) necrotic damage. The target must succeed on a {@dc 14} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Create Specter",
+					"entries": [
+						"The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a {@creature specter} in the space of its corpse or in the nearest unoccupied space. The {@creature specter} is under the wraith's control. The wraith can have no more than seven specters under its control at one time."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/wraith.mp3"
+			},
+			"traitTags": [
+				"Incorporeal Movement",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"HPR"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Wraith.png",
+			"fluff": {
+				"name": "Wraith",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"A wraith is malice incarnate, concentrated into an incorporeal form that seeks to quench all life. The creature is suffused with negative energy, and its mere passage through the world leaves nearby plants blackened and withered. Animals flee from its presence. Even small fires can be extinguished by the sucking oblivion of the wraith's horrifying existence.",
+									{
+										"name": "Vile Oblivion",
+										"type": "entries",
+										"entries": [
+											"When a mortal humanoid lives a debased life or enters into a fiendish pact, it consigns its soul to eternal damnation in the Lower Planes. However, sometimes the soul becomes so suffused with negative energy that it collapses in on itself and ceases to exist the instant before it can shuffle off to some horrible afterlife. When this occurs, the spirit becomes a soulless wraith-a malevolent void trapped on the plane where it died. Almost nothing of the wraith's former existence is preserved; in this new form, it exists only to annihilate other life."
+										]
+									},
+									{
+										"name": "Bereft of Body",
+										"type": "entries",
+										"entries": [
+											"A wraith can move through solid creatures and objects as easily as a mortal creature moves through fog.",
+											"A wraith might retain a few memories of its mortal life as shadowy echoes. However, even the strongest events and emotions become little more than faint impressions, fleeting as half-remembered dreams. A wraith might pause to stare at something that fascinated it in life, or it might curb its wrath in acknowledgment of a past friendship. Such moments come rarely, however, because most wraiths despise what they were as a reminder of what they have become."
+										]
+									},
+									{
+										"name": "Undead Commanders",
+										"type": "entries",
+										"entries": [
+											"A wraith can make an undead servant from the spirit of a humanoid creature that has recently suffered a violent death. Such a fragment of woe becomes a specter, spiteful of all that lives.",
+											"Wraiths sometimes rule the legions of the dead, plotting the doom of living creatures. When they emerge from their tombs to do battle, life and hope shrivel before them. Even if a wraith's armies are forced to retreat, the lands its forces occupied are so blasted and withered that those who live there often starve and die."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A wraith doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Wraith.jpg"
+						}
+					}
+				]
+			},
+			"isNpc": true
 		}
+	]
+}
 	]
 }
