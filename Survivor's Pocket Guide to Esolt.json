@@ -1,0 +1,269 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "EsoltGuide",
+				"abbreviation": "SPGE",
+				"full": "Survivor's Pocket Guide to Esolt",
+				"url": "",
+				"authors": [
+					"Marshall Wentz"
+				],
+				"convertedBy": []
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Infested Frostmaw Wolf",
+			"source": "EsoltGuide",
+			"basicRules": true,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d10 + 20"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 14,
+			"int": 7,
+			"wis": 12,
+			"cha": 8,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+3"
+			},
+			"passive": 15,
+			"immune": [
+				"cold"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The wolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Snow Camouflage",
+					"entries": [
+						"The wolf has advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
+					]
+				},
+				{
+					"name": "Damage Adaptation",
+					"entries": [
+						"When this creature first takes damage from any source, it gains resistance to the largest single damage dealt by that source. For example, if it takes 5 slashing and 10 radiant damage, it gains resistance to radiant damage. This ability triggers again when the creature falls below half of its maximum hitpoints, and again when it falls below one-quarter of that maximum, rounded up. The creature may not gain more than one resistance to any one damage type, and may not gain resistance to fire damage.",
+						"This creature may have a number of these resistances at once equal to its challenge rating, rounded up. If it obtains a new resistance while at its maximum number, it may choose to replace any of its current resistances with the new one, or to not gain the new one.",
+						"Resistances gained from this ability are permanent, but are removed if the creature takes fire damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Cold Breath {@recharge 5}",
+					"entries": [
+						"The wolf exhales a blast of freezing wind in a 15-foot cone. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 18 ({@damage 4d8}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/winter-wolf.mp3"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"damageTags": [
+				"C",
+				"P",
+				"R"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Winter Wolf.png",
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"This Infested dire wolf has developed a mu-particle energy fueled capability to exhale freezing energy."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Winter Wolf.jpg"
+						}
+					}
+				]
+			},
+			"environment": [
+				"arctic"
+			],
+			"vulnerable": [
+				"fire"
+			]
+		},
+		{
+			"name": "Infested Wolf",
+			"source": "EsoltGuide",
+			"page": 341,
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d8 + 2"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 12,
+			"int": 3,
+			"wis": 12,
+			"cha": 6,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"passive": 13,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The wolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Damage Adaptation",
+					"entries": [
+						"When this creature first takes damage from any source, it gains resistance to the largest single damage dealt by that source. For example, if it takes 5 slashing and 10 radiant damage, it gains resistance to radiant damage. This ability triggers again when the creature falls below half of its maximum hitpoints, and again when it falls below one-quarter of that maximum, rounded up. The creature may not gain more than one resistance to any one damage type, and may not gain resistance to fire damage.",
+						"This creature may have a number of these resistances at once equal to its challenge rating, rounded up. If it obtains a new resistance while at its maximum number, it may choose to replace any of its current resistances with the new one, or to not gain the new one.",
+						"Resistances gained from this ability are permanent, but are removed if the creature takes fire damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage. If the target is a creature, it must succeed on a {@dc 11} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/wolf.mp3"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"damageTags": [
+				"P",
+				"R"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Wolf.png",
+			"fluff": {
+				"name": "Wolf",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Wolf.webp"
+						}
+					}
+				]
+			},
+			"vulnerable": [
+				"fire"
+			]
+		}
+	]
+}
