@@ -9,7 +9,8 @@
 				"authors": [
 					"Marshall Wentz"
 				],
-				"convertedBy": []
+				"convertedBy": [],
+				"version": "1.0.0"
 			}
 		]
 	},
@@ -263,6 +264,246 @@
 			},
 			"vulnerable": [
 				"fire"
+			]
+		},
+		{
+			"name": "Mantleswimmer Sandwyrm",
+			"source": "EsoltGuide",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "dragon",
+				"tags": [
+					"sandwyrm"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 565,
+				"formula": "29d20 + 261"
+			},
+			"speed": {
+				"walk": 45,
+				"burrow": 120,
+				"fly": 60,
+				"swim": 60
+			},
+			"str": 30,
+			"dex": 16,
+			"con": 29,
+			"int": 21,
+			"wis": 22,
+			"cha": 30,
+			"save": {
+				"dex": "+11",
+				"con": "+17",
+				"int": "+13",
+				"wis": "+14",
+				"cha": "+18"
+			},
+			"skill": {
+				"insight": "+14",
+				"perception": "+22",
+				"persuasion": "+18"
+			},
+			"senses": [
+				"tremorsense 120 ft.",
+				"truesight 120 ft."
+			],
+			"passive": 32,
+			"immune": [
+				{
+					"special": "fire from non-magical sources"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Ignan"
+			],
+			"cr": "28",
+			"trait": [
+				{
+					"name": "Legendary Resistance (4/Day)",
+					"entries": [
+						"If the mantleswimmer fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Earthen Awakening (Recharges after a Short or Long Rest)",
+					"entries": [
+						"If the mantleswimmer would be reduced to 0 hit points, its current hit point total instead resets to 450 hit points, it recharges its Breath Weapon, and it regains any expended uses of Legendary Resistance. Additionally, the mantleswimmer can now use the options in the \"Mythic Actions\" section for 1 hour. Award a party an additional 120,000 XP (240,000 XP total) for defeating the mantleswimmer after its Metallic Awakening activates."
+					]
+				},
+				{
+					"name": "Magma Serpent",
+					"entries": [
+						"The mantleswimmer doesn't need to breathe or drink. Additionally, it is unimpeded when using its swimming speed in thick fluids or by {@book difficult terrain|phb|8|Difficult Terrain} made of earth."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mantleswimmer makes one Bite attack and two Claw attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 15 ft., one target. {@h}21 ({@damage 2d10 + 10}) piercing damage plus 13 ({@damage 2d12}) force damage.  If the target is a Huge or smaller creature, it is {@condition grappled} (escape {@dc 20}) and is {@condition restrained} until this grapple ends. The mantleswimmer can have only one creature {@condition grappled} in this way at a time."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 10 ft., one target. {@h}19 ({@damage 2d8 + 10}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 20 ft., one target. {@h}21 ({@damage 2d10 + 10}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 26} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Breath Weapon {@recharge 5}",
+					"entries": [
+						"The mantleswimmer uses one of the following breath weapons:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Blasting Breath",
+									"entries": [
+										"The mantleswimmer exhales sandy particulate in a 300-foot cone. Each creature in that area must make a {@dc 25} Dexterity saving throw, taking 84 ({@damage 13d12}) slashing damage on a failed save, or half as much damage on a successful one."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Sapping Breath",
+									"entries": [
+										"The mantleswimmer exhales dust and wind in a 120-foot-radius sphere centered on itself. Each creature in that area must make a {@dc 25} Constitution saving throw. On a failed save, the creature is {@condition blinded} for 1 minute. On a successful save, the creature has disadvantage on attack rolls and saving throws until the end of the mantleswimmer's next turn. A {@condition blinded} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The mantleswimmer makes one Claw or Tail attack."
+					]
+				},
+				{
+					"name": "Wing Attack (Costs 2 Actions)",
+					"entries": [
+						"The mantleswimmer leaps into the air and slams the ground with its body. Each creature within 30 feet of it must succeed on a {@dc 26} Dexterity saving throw or take 17 ({@damage 2d6 + 10}) bludgeoning damage and be knocked {@condition prone}. The mantleswimmer can then burrow up to half its burrowing speed."
+					]
+				}
+			],
+			"mythicHeader": [
+				"If the mantleswimmer's Earthen Awakening trait has activated in the last hour, it can use the options below as legendary actions."
+			],
+			"mythic": [
+				{
+					"name": "Bite",
+					"entries": [
+						"The greatwyrm makes one Bite attack."
+					]
+				},
+				{
+					"name": "Shattering Roar (Costs 2 Actions)",
+					"entries": [
+						"The greatwyrm unleashes a magical roar. Each creature in a 120-foot-radius sphere centered on the greatwyrm must succeed on a {@dc 26} Constitution saving throw or take 19 ({@damage 3d12}) thunder damage and be {@condition incapacitated} until the end of its next turn."
+					]
+				}
+			],
+			"dragonAge": "greatwyrm",
+			"traitTags": [
+				"Legendary Resistances",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"T",
+				"U"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack",
+				"Shapechanger"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"IG"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"incapacitated",
+				"prone",
+				"restrained"
+			],
+			"hasFluff": true,
+			"fluff": {
+				"entries": [
+					"The most ancient and massive sandwyrms undergo an arcane metamorphosis to become a mantleswimmer, nigh-immortal creatures that dwell within the molten rock of Esolt's mantle.",
+					"As the final stage of the sandwyrm's life cycle, mantleswimmers subsist by grazing on solid rock near the crust, and deposit a sandstone-like waste product saturated with latent magical energy, on which sand wyrmlings feed in order to grow to enter later stages of maturity."
+				]
+			},
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"group": [
+				"Sandwyrm"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"damageTags": [
+				"B",
+				"O",
+				"P",
+				"S",
+				"T"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength"
 			]
 		}
 	]
